@@ -2,6 +2,7 @@ package com.UmmuLearns.stacksandqueues;
 
 /**
  * Generic stack with push, pop and peek operations
+ * TODO Update all APIs with info on how they handle edge cases, for eg: push(null)
  * @param <T>
  */
 public interface MyStack<T> {
