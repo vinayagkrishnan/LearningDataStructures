@@ -1,5 +1,7 @@
 package com.UmmuLearns.stacksandqueues;
 
+import com.UmmuLearns.Node;
+
 /**
  * Stack implementation using a linked list to store values
  * Operations that can be performed : push, pop, peek, check if empty
@@ -19,7 +21,7 @@ public class LinkedListBasedStack<T> implements MyStack<T>{
             System.out.println("Error: Stack is empty!");
             return null;
         } else {
-          return top.data;
+          return (T) top.getData();     //doubt : y (T)
         }
     }
 
@@ -48,7 +50,7 @@ public class LinkedListBasedStack<T> implements MyStack<T>{
             return null;
         } else {
             // NOTE Use finals everywhere relevant
-            final T poppedValue = top.data;
+            final T poppedValue = (T) top.getData();
             top = top.next;
             return poppedValue;
         }
@@ -76,15 +78,15 @@ public class LinkedListBasedStack<T> implements MyStack<T>{
             System.out.println("Error: Cannot find max from empty map!");
             return null;
         } else {
-            return top.max;
+            return (T) top.getMax();
         }
     }
 
     /**
      * Structure for each value in the stack
-     * TODO Read about "DRY", refactor the original Node and make it use generics
+     * done : Read about "DRY", refactor the original Node and make it use generics
      */
-    private class Node {
+    /*private class Node {
         //Doubt : why can I use this variable above?
         private T data;
         private Node next;
@@ -92,5 +94,5 @@ public class LinkedListBasedStack<T> implements MyStack<T>{
         public Node(T data){
             this.data = data;
         }
-    }
+    }*/
 }

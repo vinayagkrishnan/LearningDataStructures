@@ -13,7 +13,7 @@ public class SinglyLinkedList implements LinkedList {
         }else{
             Node current = head;
             while(current != null){
-                System.out.println(current.data);
+                System.out.println(current.getData());
                 current = current.next;
             }
         }
@@ -58,7 +58,7 @@ public class SinglyLinkedList implements LinkedList {
         Node current = head;
         Node previous = new Node();
         while(current != null){
-            if(current.data == value){
+            if(current.getData().equals(value)){
                 previous.next = current.next;
                 current.next = null;
                 if(current == head)
