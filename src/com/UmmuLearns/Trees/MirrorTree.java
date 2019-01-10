@@ -14,7 +14,7 @@ import com.UmmuLearns.BSTNode;
  *           \     /                    \     /
  *           4    7                      7   4
  */
-public class GetMirroredTree {
+public class MirrorTree {
 
     /**
      * Given the root node to a binary tree, this function returns the mirror image of the tree
@@ -38,6 +38,23 @@ public class GetMirroredTree {
         }
         return root;
     }
+
+    //TODO
+    /*public BSTNode createMirroredTreeNew(final BSTNode root){
+        BSTNode mirroredNode;
+        if(root == null) {
+            return null;
+        } else {
+            mirroredNode = new BSTNode(root.getData());
+
+            BSTNode newLeft = createMirroredTree(root.getRight());
+            BSTNode newRight = createMirroredTree(root.getLeft());
+
+            mirroredNode.setLeft(newLeft);
+            mirroredNode.setRight(newRight);
+        }
+        return mirroredNode;
+    }*/
 
     /**
      * Accepts two subtrees and recursively swaps the left and right subtrees in place
