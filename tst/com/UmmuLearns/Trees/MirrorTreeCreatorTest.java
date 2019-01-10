@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class MirrorTreeTest {
+class MirrorTreeCreatorTest {
 
     BSTNode testNode1;
     BSTNode testNode2;
@@ -73,7 +73,7 @@ class MirrorTreeTest {
 
     @Test
     void createMirroredTree() {
-        MirrorTree treeManipulator = new MirrorTree();
+        MirrorTreeCreator treeManipulator = new MirrorTreeCreator();
         IdenticalTreeTester validator = new IdenticalTreeTester();
 
         /*System.out.println(testNode1);

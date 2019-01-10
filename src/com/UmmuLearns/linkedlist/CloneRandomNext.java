@@ -4,10 +4,3 @@ public class CloneRandomNext {
 }
 
 
-class Node {
-
-}
-
-class RunClone {
-
-}

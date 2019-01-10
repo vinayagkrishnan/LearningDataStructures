@@ -14,7 +14,7 @@ import com.UmmuLearns.BSTNode;
  *           \     /                    \     /
  *           4    7                      7   4
  */
-public class MirrorTree {
+public class MirrorTreeCreator {
 
     /**
      * Given the root node to a binary tree, this function returns the mirror image of the tree
