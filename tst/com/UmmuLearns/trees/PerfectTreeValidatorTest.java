@@ -1,4 +1,4 @@
-package com.UmmuLearns.Trees;
+package com.UmmuLearns.trees;
 
 import com.UmmuLearns.BSTNode;
 import org.junit.jupiter.api.AfterEach;
@@ -12,6 +12,8 @@ class PerfectTreeValidatorTest {
 
     @BeforeEach
     void setUp() {
+
+        //TODO - add tests for imperfect tree and balanced but imperfect tree(level diff at most 1)
         testNode = new BSTNode(4);
         testNode.setLeft(new BSTNode(5));
         testNode.setRight(new BSTNode(6));

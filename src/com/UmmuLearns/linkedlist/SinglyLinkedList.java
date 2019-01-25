@@ -70,17 +70,7 @@ public class SinglyLinkedList implements LinkedList {
                 current = current.next;
             }
         }
-        /*
-        Node prev = new Node();
-        Node current = head;
 
-        while(current != null && current.data != value) {
-            prev = current;
-            current = current.next;
-        }
-            prev.next = current.next;
-            size--;
-*/
     }
 
 }

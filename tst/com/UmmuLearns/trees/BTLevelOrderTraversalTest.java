@@ -1,4 +1,4 @@
-package com.UmmuLearns.Trees;
+package com.UmmuLearns.trees;
 
 import com.UmmuLearns.BSTNode;
 import org.junit.jupiter.api.BeforeEach;
